@@ -1,0 +1,198 @@
+<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <title>Gennerator</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" th:href="@{/assets/vendor/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/font-awesome/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/linearicons/style.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/chartist/css/chartist-custom.css}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" th:href="@{/assets/css/main.css}">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" th:href="@{/assets/css/demo.css}">
+    <!-- GOOGLE FONTS -->
+    <link th:href="@{/css/family.css}" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" th:href="@{/assets/img/apple-icon.png}">
+    <link rel="icon" type="image/png" sizes="96x96" th:href="@{/assets/img/favicon.png}">
+
+    <link rel="stylesheet" th:href="@{/bootstrapvalidor/css/bootstrapValidator.css}">
+
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+
+    <div th:include="~{head::#nav}"></div>
+    <div th:include="~{head::#leftTable}"></div>
+
+    <div class="main">
+        <div class="main-content">
+            <div class="container-fluid">
+                <h3 class="page-title">新增模块</h3>
+                <div id="toastr-demo" class="panel">
+                    <div class="panel-body">
+                        <!-- CONTEXTUAL -->
+                        <hr style="background-color:#D0D0D0 "/>
+
+                        <div class="container">
+                            <div class="row clearfix">
+                                <div class="container">
+                                    <div class="row clearfix">
+                                        <div class="col-md-12 column">
+                                            <div class="row clearfix">
+                                                <div class="col-md-2 column">
+                                                </div>
+                                                <div class="col-md-8 column" align="center">
+                                                    <form class="form-horizontal" role="form" id="gennerator_form" method="post" th:action="@{/generator/genneratorCode}">
+                                                        <div class="form-group">
+                                                            <label for="con" class="col-sm-2 control-label">连接名称：</label>
+                                                            <div class="col-sm-10">
+                                                               <select id="con" class="form-control" name="conname">
+                                                                   <option>=================</option>
+                                                                   <div th:each="connation:${connectionList}">
+                                                                       <option  th:value="${connation.conname}" ><span th:text ="${connation.conname}"></span></option>
+                                                            </div>
+                                                               </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="tableName" class="col-sm-2 control-label">数据库表名：</label>
+                                                            <div class="col-sm-10">
+                                                                <select id="tableName" name="tableName" class="form-control">
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="modulePath" class="col-sm-2 control-label">模块地址：</label>
+                                                            <div class="col-sm-10">
+                                                               <input type="text" name="modulePath" id="modulePath" class="form-control" placeholder="eg:D:\IDEA\DreamWorkSpace\mydream\src\main\java\com\mydream\backstate"/>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group">
+                                                            <button type="reset" class="btn btn-warning" style="margin-left: 50px;">重置</button>
+                                                            <button type="submit" class="btn btn-primary" style="margin-left: 50px;">新增模块</button>
+                                                        </div>
+
+                                                    </form>
+
+                                                </div>
+                                                <div class="col-md-2 column">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Javascript -->
+<script type="text/javascript" th:src="@{/../assets/vendor/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/../assets/vendor/bootstrap/js/bootstrap.min.js}"></script>
+
+<script type="text/javascript" th:src="@{/../bootstrapvalidator/js/bootstrapValidator.js}"></script>
+<script type="text/javascript">
+
+    var header = $("meta[name='_csrf_header']").attr("content");
+    var token =$("meta[name='_csrf']").attr("content");
+
+    $(function () {
+        /**
+         * 连接名称改换事件
+         */
+        $('#con').change(function () {
+            // 连接名称的id
+            var conname = $('#con').val();
+            $.ajax({
+                url:"/generator/showAllTable",
+                type:"post",
+                data:{"conname":conname},
+                dataType:"json",
+                beforeSend : function(xhr) {
+                    xhr.setRequestHeader(header, token);
+                },
+                success:function (resData) {
+                    resData.resData.forEach(tableNames);
+                    $('#tableName').html(optStr);
+
+                }
+            })
+        });
+
+        // 数据库表下拉框的option
+        var optStr = "<option>=================</option>";
+        function tableNames(item) {
+           optStr = optStr +"<option value='"+item+"'>"+item+"</option>"
+        }
+
+        /**
+         * 对表单的验证
+         */
+        $('#gennerator_form')
+            .bootstrapValidator({
+                message: 'This value is not valid',
+                //live: 'submitted',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    moduleName: {
+                        message: 'The username is not valid',
+                        validators: {
+                            notEmpty: {
+                                message: '模块名称不能为空！'
+                            },
+                            regexp: {
+                                regexp: /^[a-zA-Z0-9_\.]+$/,
+                                message: '连接名称只能未字幕数字'
+                            }
+                        }
+                    },
+                    moduleDetail: {
+                        validators: {
+                            notEmpty: {
+                                message: '模块描述不能为空！'
+                            }
+                        }
+                    }
+                }
+            })
+            .on('success.form.bv', function(e) {
+                // Prevent submit form
+//                e.preventDefault();
+                var $form = $(e.target),
+                    validator = $form.data('bootstrapValidator');
+                $form.find('.alert').html('Thanks for signing up. Now you can sign in as ' + validator.getFieldElements('username').val()).show();
+            });
+
+
+
+
+    });
+
+
+
+</script>
+</body>
+</html>

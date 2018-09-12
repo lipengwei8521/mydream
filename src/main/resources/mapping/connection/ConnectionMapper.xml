@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mydream.backstate.connection.dao.ConnectionMapper">
+    <resultMap id="BaseResultMap" type="com.mydream.backstate.connection.entity.Connection" >
+        <id column="con_id" property="conid" jdbcType="BIGINT" />
+        <result column="con_name" property="conname" jdbcType="VARCHAR" />
+        <result column="con_type" property="contype" jdbcType="VARCHAR" />
+        <result column="con_ip" property="conip" jdbcType="VARCHAR" />
+        <result column="con_port" property="conport" jdbcType="VARCHAR" />
+        <result column="con_username" property="conusername" jdbcType="VARCHAR" />
+        <result column="con_password" property="conpassword" jdbcType="VARCHAR" />
+        <result column="con_dbname" property="condbname" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="BaseColumn">
+        con_id,con_name,con_type,con_ip,con_port,con_username,con_password,con_dbname
+    </sql>
+
+   <insert id="insertConnert" parameterType="string" >
+      INSERT INTO
+       connection (con_name,con_type,con_ip,con_port,con_username,con_password,con_dbname)
+      VALUES
+      (#{conname},#{contype},#{conip},#{conport},#{conusername},#{conpassword},#{condbname})
+   </insert>
+    
+    <select id="getAllConnection" resultMap="BaseResultMap" parameterType="string">
+      SELECT
+        <include refid="BaseColumn"/>
+      FROM
+        connection
+    </select>
+    
+    <select id="countConnection" resultType="int" parameterType="int">
+      SELECT count(con_id)
+      FROM
+        connection
+    </select>
+    
+    <select id="findConnectionByConName" resultMap="BaseResultMap" parameterType="string">
+      SELECT
+        <include refid="BaseColumn"/>
+      FROM
+        connection
+      WHERE
+        con_name = #{conname}
+    </select>
+    
+    <select id="findConnection" resultMap="BaseResultMap" parameterType="com.mydream.backstate.connection.entity.Connection">
+      SELECT
+        <include refid="BaseColumn"/>
+      FROM
+        connection
+      <where>
+        <if test="conname != null and conname != ''">
+            <bind name="connameparam" value=" '%' + _parameter.conname + '%' "></bind>
+            and con_name like #{connameparam}
+        </if>
+    </where>
+
+    </select>
+    
+    <delete id="delConnection" parameterType="Integer">
+        DELETE FROM connection WHERE con_id = #{conid}
+    </delete>
+
+</mapper>

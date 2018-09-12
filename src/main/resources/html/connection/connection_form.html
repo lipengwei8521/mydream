@@ -1,0 +1,266 @@
+<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <title>Connection</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" th:href="@{/assets/vendor/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/font-awesome/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/linearicons/style.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/chartist/css/chartist-custom.css}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" th:href="@{/assets/css/main.css}">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" th:href="@{/assets/css/demo.css}">
+    <!-- GOOGLE FONTS -->
+    <link th:href="@{/css/family.css}" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" th:href="@{/assets/img/apple-icon.png}">
+    <link rel="icon" type="image/png" sizes="96x96" th:href="@{/assets/img/favicon.png}">
+
+    <link rel="stylesheet" th:href="@{/bootstrapvalidor/css/bootstrapValidator.css}">
+
+</head>
+<body>
+<!-- WRAPPER -->
+    <div id="wrapper">
+
+        <div th:include="~{head::#nav}"></div>
+        <div th:include="~{head::#leftTable}"></div>
+
+        <div class="main">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <h3 class="page-title">连接数据库信息</h3>
+                    <div id="toastr-demo" class="panel">
+                        <div class="panel-body">
+                            <!-- CONTEXTUAL -->
+                            <hr style="background-color:#D0D0D0 "/>
+
+                            <div class="container">
+                                <div class="row clearfix">
+                                    <div class="col-md-12 column">
+                                        <div class="row clearfix">
+                                            <div class="col-md-2 column">
+                                            </div>
+                                            <div class="col-md-8 column" align="center">
+                                                <form class="form-horizontal" role="form" id="con_form" method="post" th:action="@{/connection/insertConnection}">
+                                                    <div class="form-group">
+                                                        <label for="conname" class="col-sm-2 control-label">连接名称：</label>
+                                                        <div class="col-sm-10">
+                                                            <input class="form-control" id="conname" type="text"  name="conname" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="contype" class="col-sm-2 control-label">数据库类型：</label>
+                                                        <div class="col-sm-10">
+                                                            <select  id="contype" name="contype" class="form-control" >
+                                                                <option selected="selected" value="1" >MYSQL</option>
+                                                                <option value="2">ORACLE</option>
+                                                                <option value="3">SQL SERVER</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="con_dbName" class="col-sm-2 control-label">数据库名称：</label>
+                                                        <div class="col-sm-10">
+                                                            <input class="form-control" id="con_dbName" type="text"  name="con_dbName"/>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="conip" class="col-sm-2 control-label">IP地址：</label>
+                                                        <div class="col-sm-10">
+                                                            <input class="form-control" id="conip" type="text"  name="conip"/>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="conport" class="col-sm-2 control-label">端口：</label>
+                                                        <div class="col-sm-10">
+                                                            <input class="form-control" id="conport" type="text"  name="conport"/>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="conusername" class="col-sm-2 control-label">用户名：</label>
+                                                        <div class="col-sm-10">
+                                                            <input class="form-control" id="conusername" type="text"  name="conusername"/>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="conpassword" class="col-sm-2 control-label">密码：</label>
+                                                        <div class="col-sm-10">
+                                                            <input class="form-control" id="conpassword" type="text"  name="conpassword"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <button type="reset" class="btn btn-warning" style="margin-left: 50px;">重置</button>
+                                                        <button type="submit" class="btn btn-primary" style="margin-left: 50px;">新增</button>
+                                                    </div>
+
+                                                </form>
+                                                <button class="btn btn-info" id="testform" data-toggle="popover" data-trigger="focus" data-placement="left">测试连接</button>
+                                            </div>
+                                            <div class="col-md-2 column">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- Javascript -->
+<script type="text/javascript" th:src="@{/../assets/vendor/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/../assets/vendor/bootstrap/js/bootstrap.min.js}"></script>
+
+<script type="text/javascript" th:src="@{/../bootstrapvalidator/js/bootstrapValidator.js}"></script>
+
+<script type="text/javascript">
+
+
+    var isConName = true;
+
+
+    $(document).ready(function() {
+
+        /**
+         * 测试连接信息是否正确
+         */
+        $('#testform').click(function () {
+
+            var conname = $('#conname').val();
+            var contype = $('#contype').val();
+            var con_dbName = $('#con_dbName').val();
+            var conip = $('#conip').val();
+            var conport = $('#conport').val();
+            var conusername = $('#conusername').val();
+            var conpassword = $('#conpassword').val();
+
+            $.ajax({
+                url:"/connection/isConnect",
+                type:"post",
+                data:{"conname":conname,"contype":contype,"con_dbName":con_dbName,"conip":conip,"conport":conport,"conusername":conusername,"conpassword":conpassword},
+                dataType:"json",
+               // beforeSend : function(xhr) {
+               //     xhr.setRequestHeader(header, token);
+               // },
+                success:function (resData) {
+                    if(resData.state==1){
+                        $('#testform').attr("title","连接数据库").attr("data-content","数据库连接成功！").popover('show');
+                        isConName =true;
+                    }
+                    if(resData.state==0){
+                        $('#testform').attr("title","连接数据库").attr("data-content",resData.mes).popover('show');
+                        isConName =false;
+                    }
+                }
+            })
+        });
+
+        /**
+         * 对表单的验证
+         */
+        $('#con_form')
+            .bootstrapValidator({
+                message: 'This value is not valid',
+                //live: 'submitted',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    conname: {
+                        message: 'The username is not valid',
+                        validators: {
+                            notEmpty: {
+                                message: '连接名称不能为空！'
+                            },
+                            regexp: {
+                                regexp: /^[a-zA-Z0-9_\.]+$/,
+                                message: '连接名称只能未字幕数字'
+                            }
+                        }
+                    },
+                    condbname: {
+                        validators: {
+                            notEmpty: {
+                                message: '数据库名称不能为空！'
+                            }
+                        }
+                    },
+                    conip: {
+                            message: 'The conip is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: 'IP地址不能为空！'
+                        },
+                        regexp: {
+                            regexp: /[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/,
+                            message: '端口号只能为数字！'
+                        }
+                    }
+                },
+                conport: {
+                    message: 'The username is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: '端口不能为空！'
+                        },
+                        regexp: {
+                            regexp: /^[0-9]*$/,
+                            message: '端口号只能为数字！'
+                        }
+                    }
+                },
+                conusername: {
+                    message: 'The username is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: '用户名不能为空！'
+                        }
+                    }
+                },
+                conpassword: {
+                    validators: {
+                        notEmpty: {
+                            message: '密码不能为空'
+                        }
+                    }
+                }
+
+                }
+            })
+            .on('success.form.bv', function(e) {
+                // Prevent submit form
+//                e.preventDefault();
+                if(isConName == true){
+                    var $form = $(e.target),
+                        validator = $form.data('bootstrapValidator');
+                    $form.find('.alert').html('Thanks for signing up. Now you can sign in as ' + validator.getFieldElements('username').val()).show();
+                }else {
+                    e.preventDefault();
+                }
+
+            });
+
+    });
+
+</script>
+</body>
+</html>

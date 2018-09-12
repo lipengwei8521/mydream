@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <title>404</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" th:href="@{/assets/vendor/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/font-awesome/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/linearicons/style.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/chartist/css/chartist-custom.css}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" th:href="@{/assets/css/main.css}">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" th:href="@{/assets/css/demo.css}">
+    <!-- GOOGLE FONTS -->
+    <link th:href="@{/css/family.css}" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" th:href="@{/assets/img/apple-icon.png}">
+    <link rel="icon" type="image/png" sizes="96x96" th:href="@{/assets/img/favicon.png}">
+
+    <link th:href="@{/bootstrapvalidor/css/bootstrapValidator.css}" rel="stylesheet">
+</head>
+<body>
+<!-- WRAPPER -->
+<div id="wrapper">
+
+    <div th:include="~{head::#nav}"></div>
+    <div th:include="~{head::#leftTable}"></div>
+
+    <div class="main">
+        <div class="main-content">
+            <div class="container-fluid" >
+                <h3 class="page-title" > 错误信息</h3>
+
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-md-4 column">
+                        </div>
+                        <div class="col-md-4 column">
+                            <h1 >!404</h1>
+                            <p>页面找不到，请检查访问路径，与访问资源是否正确！</p>
+                        </div>
+                        <div class="col-md-4 column">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Javascript -->
+<script type="text/javascript" th:src="@{/../assets/vendor/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/../assets/vendor/bootstrap/js/bootstrap.min.js}"></script>
+
+<script type="text/javascript" th:src="@{/../bootstrapvalidator/js/bootstrapValidator.js}"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header"  th:content="${_csrf.headerName}"/>
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" th:href="@{/assets/vendor/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/font-awesome/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/linearicons/style.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/chartist/css/chartist-custom.css}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" th:href="@{/assets/css/main.css}">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" th:href="@{/assets/css/demo.css}">
+    <!-- GOOGLE FONTS -->
+    <link th:href="@{/css/family.css}" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" th:href="@{/assets/img/apple-icon.png}">
+    <link rel="icon" type="image/png" sizes="96x96" th:href="@{/assets/img/favicon.png}">
+
+</head>
+<body>
+<!-- WRAPPER -->
+    <div id="wrapper">
+
+        <div th:include="~{head::#nav}"></div>
+        <div th:include="~{head::#leftTable}"></div>
+
+        <div class="main">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <h3 class="page-title">代码生成</h3>
+                    <div id="toastr-demo" class="panel">
+                        <div class="panel-body">
+                            <!-- CONTEXTUAL -->
+                            <h4>
+                                连接数据库
+                                <span style="margin-left: 20px">
+                                    <button type="button" class="btn btn-default" >项目地址</button>
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#creatLink" >新增链接</button>
+                                </span>
+                            </h4>
+                            <table class="table table-striped" style="text-align: center;">
+                                <thead >
+                                <tr>
+                                    <th style="text-align: center">#</th>
+                                    <th style="text-align: center">连接名称</th>
+                                    <th style="text-align: center"> 数据库类型</th>
+                                    <th style="text-align: center">IP地址</th>
+                                    <th style="text-align: center">端口</th>
+                                    <th style="text-align: center">用户名</th>
+                                    <th style="text-align: center">密码</th>
+                                    <th style="text-align: center">修改</th>
+                                    <th style="text-align: center">删除</th>
+                                </tr>
+                                </thead>
+                                <tbody th:each="connection,connectionStart:${connectionList}">
+                                <tr>
+
+                                    <td th:text="${connectionStart.count}"></td>
+                                    <td th:text="${connection.conname}"></td>
+                                    <td th:text="${connection.contype}"></td>
+                                    <td th:text="${connection.conip}"></td>
+                                    <td th:text="${connection.conport}"></td>
+                                    <td th:text="${connection.conusername}"></td>
+                                    <td th:text="${connection.conpassword}"></td>
+                                    <td > <a type="button" class="btn btn-warning"      th:onclick="'javascript:updateCon('+${connection.conid}+')'">修改</a></td>
+                                    <td > <a type="button" class="btn btn-danger" th:onclick="'javascript:updateCon('+${connection.conid}+')'">删除</a></td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- 模态框 开始 -->
+<!-- Modal -->
+<div class="modal fade" id="creatLink" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">新增链接</h4>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-horizontal" id="con_form" method="post" th:action="@{/../connection/insertConnection}">
+                    <div class="form-group">
+                        <label for="con_name" class="col-sm-2 control-label">连接名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="con_name" placeholder="连接名称" name="con_name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="con_dbName" class="col-sm-2 control-label">数据库名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="con_dbName" placeholder="数据库名称" name="con_dbName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="con_type" class="col-sm-2 control-label">连接类型</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="con_type" placeholder="连接类型" name="con_type">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="con_Ip" class="col-sm-2 control-label">IP 地址</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="con_Ip" placeholder="IP 地址" name="con_Ip">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="con_port" class="col-sm-2 control-label">端口</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="con_port" placeholder="端口" name="con_port">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="con_username" class="col-sm-2 control-label">用户名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="con_username" placeholder="用户名" name="con_username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="con_password" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="con_password" placeholder="密码" name="con_password">
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="testLink" title="数据库连接："
+                        data-container="body" data-toggle="popover" data-placement="left"
+                        data-content="左侧的 Popover 中的一些内容" data-trigger="focus">测试连接</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="cancle">取消</button>
+                <button type="button" class="btn btn-primary" id="creat">新增</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 模态框 结束 -->
+
+
+<!-- Javascript -->
+<script type="text/javascript" th:src="@{/../assets/vendor/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/../assets/vendor/bootstrap/js/bootstrap.min.js}"></script>
+
+<script type="text/javascript">
+    $(function() {
+
+        var header = $("meta[name='_csrf_header']").attr("content");
+        var token =$("meta[name='_csrf']").attr("content");
+
+        /**
+         * 测试连接数据库点击事件
+         */
+        $("#testLink").click(function () {
+
+           // 获取新增链接表单中的值，
+           var con_dbName = $('#con_dbName').val();
+           var con_type = $('#con_type').val();
+           var con_Ip = $('#con_Ip').val();
+           var con_port = $('#con_port').val();
+           var con_username = $('#con_username').val();
+           var con_password = $('#con_password').val();
+
+           // 进行ajax请求
+            $.ajax({
+
+                url:"/generator/isConnect",
+                type:"POST",
+                data:{"con_dbName":con_dbName,"con_type":con_type,"con_Ip":con_Ip,"con_port":con_port,"con_username":con_username,"con_password":con_password},
+                dataType:"json",
+                beforeSend : function(xhr) {
+
+                    xhr.setRequestHeader(header, token);
+
+                },
+                success:function (data) {
+
+                    if(data.state==1){
+
+                        $('#testLink').attr("data-content","成功！").popover('show');
+
+                    }else {
+
+                        $('#testLink').attr("data-content","失败，连接信息有误！").popover('show');
+
+                    }
+
+                }
+
+            });
+       });
+
+        /**
+         * 取消重置表单点击事件
+         * */
+        $('#cancle').click(function () {
+            $('#con_form')[0].reset();
+
+        });
+
+
+        /**
+         * 新增链接信息表单提交点击事件
+         */
+        $('#creat').click(function () {
+
+            $('#con_form').submit();
+
+            
+            }
+
+        );
+
+    });
+
+    // 修改信息点击事件
+   function  updateCon(id) {
+       alert("updateCon===="+id);
+   };
+
+   // 删除信息点击事件
+    function delCon(id) {
+        alert("delCon===="+id);
+    };
+
+</script>
+</body>
+</html>

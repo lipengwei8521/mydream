@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" th:href="@{/assets/vendor/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/font-awesome/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/linearicons/style.css}">
+    <link rel="stylesheet" th:href="@{/assets/vendor/chartist/css/chartist-custom.css}">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" th:href="@{/assets/css/main.css}">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" th:href="@{/assets/css/demo.css}">
+    <!-- GOOGLE FONTS -->
+    <link th:href="@{/css/family.css}" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" th:href="@{/assets/img/apple-icon.png}">
+    <link rel="icon" type="image/png" sizes="96x96" th:href="@{/assets/img/favicon.png}">
+
+</head>
+<body>
+<!-- WRAPPER -->
+    <div id="wrapper">
+
+        <div th:include="~{head::#nav}"></div>
+        <div th:include="~{head::#leftTable}"></div>
+
+        <div class="main">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <h3 class="page-title"> 连接数据库信息</h3>
+                    <div class="col-md-12 column">
+                        <form class="navbar-form navbar-left" style="float: left;margin-left: 50px;" method="post" th:action="@{/connection/toConnection}">
+                            <div class="input-group">
+                                <input type="text" value="" class="form-control" placeholder="根据连接名称查询……" name="conname">
+                                <span class="input-group-btn"><button type="submit" class="btn btn-primary">查询</button></span>
+                            </div>
+                        </form>
+
+                        <a class="btn btn-primary " th:href="@{/connection/toConnectionForm}" style="float: right;margin-right: 64px;margin-top: 24px">新增链接</a>
+                        <button type="button" class="btn btn-info" style="float: right;margin-right: 100px;margin-top: 24px">项目地址</button>
+                    </div>
+                    <div id="toastr-demo" class="panel">
+                        <div class="panel-body">
+                            <!-- CONTEXTUAL -->
+
+                            <table class="table table-striped" style="text-align: center;">
+                                <thead >
+                                <tr>
+                                    <th style="text-align: center">#</th>
+                                    <th style="text-align: center">连接名称</th>
+                                    <th style="text-align: center"> 数据库类型</th>
+                                    <th style="text-align: center">IP地址</th>
+                                    <th style="text-align: center">端口</th>
+                                    <th style="text-align: center">用户名</th>
+                                    <th style="text-align: center">密码</th>
+                                    <th style="text-align: center">删除</th>
+                                </tr>
+                                </thead>
+                                <tbody th:each="connection,connectionStart:${pageBean?.items}">
+                                <tr>
+
+                                    <td th:text="${connectionStart.count}"></td>
+                                    <td th:text="${connection.conname}"></td>
+                                    <td th:text="${connection.contype}"></td>
+                                    <td th:text="${connection.conip}"></td>
+                                    <td th:text="${connection.conport}"></td>
+                                    <td th:text="${connection.conusername}"></td>
+                                    <td th:text="${connection.conpassword}"></td>
+                                    <td >
+                                        <form method="post" th:action="@{/connection/delConnection}">
+                                            <input type="hidden" th:value="${connection.conid}" name="conid">
+                                            <button type="submit" class="btn btn-danger">删除</button>
+                                        </form>
+                                    </td>
+
+<!-- th:onclick="'javascript:delCon('+${connection.conid}+')'"-->
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-md-12 column" align="center">
+                                <ul class="pagination">
+
+                                    <li th:if="${pageBean?.currentPage} eq 1"></li>
+                                    <li th:if="${pageBean?.currentPage} ne 1">
+                                        <a id="first" href="#">首页</a>
+                                    </li>
+                                    <li th:if="${pageBean?.currentPage} ne 1">
+                                        <a id="befor">上一页</a>
+                                    </li>
+                                    <li><a href="#" th:text=" '第' + ${pageBean?.currentPage} + '页' "></a></li>
+                                    <li><a href="#" th:text=" '共' + ${pageBean?.totalPage} + '页' "></a></li>
+                                    <li th:if="${pageBean?.currentPage} eq ${pageBean?.totalPage}"> </li>
+                                    <li th:if="${pageBean?.currentPage} ne ${pageBean?.totalPage}">
+                                        <a id="next" href="#">下一页</a>
+                                    </li>
+                                    <li th:if="${pageBean?.currentPage} ne ${pageBean?.totalPage}">
+                                        <a id="end">
+                                            <span aria-hidden="true">尾页</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- Javascript -->
+<script type="text/javascript" th:src="@{/../assets/vendor/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/../assets/vendor/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:inline="javascript">
+
+   var currentPage = [[${pageBean.currentPage}]];
+   var conname = [[${connection.conname}]]+'';
+   var totalPage = [[${pageBean.totalPage}]];
+
+   var firstHref = 'toConnection?currentPage=1&conname='+conname;
+   var beforHref = 'toConnection?currentPage='+(currentPage-1)+'&conname='+conname;
+   var newHref = 'toConnection?currentPage='+(currentPage+1)+'&conname='+conname;
+   var endHref = 'toConnection?currentPage='+totalPage+'&conname='+conname;
+
+   $('#first').attr("href",firstHref);
+   $('#befor').attr("href",beforHref);
+   $('#next').attr("href",newHref);
+   $('#end').attr("href",endHref);
+
+</script>
+</body>
+</html>

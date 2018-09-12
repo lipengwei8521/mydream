@@ -1,0 +1,2808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 16:12:05 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:06,204</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 15064 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:06,206</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:06,292</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@302f7971: startup date [Mon Aug 13 16:12:06 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:08,035</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:08,262</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,024</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,201</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@302f7971: startup date [Mon Aug 13 16:12:06 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,295</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,296</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,297</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,298</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,298</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,299</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,300</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,301</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,301</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,303</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,304</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,304</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,305</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,305</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,306</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,311</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,312</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,339</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,339</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:09,469</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:10,200</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@672a1c62, org.springframework.security.web.context.SecurityContextPersistenceFilter@553bc36c, org.springframework.security.web.header.HeaderWriterFilter@24d61e4, org.springframework.security.web.csrf.CsrfFilter@7c601d50, org.springframework.security.web.authentication.logout.LogoutFilter@4fe64d23, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f2de715, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d5ef498, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77c233af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@459b6c53, org.springframework.security.web.session.SessionManagementFilter@1f1e58ca, org.springframework.security.web.access.ExceptionTranslationFilter@65d8dff8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29fa6b65]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:10,351</td>
+<td class="Message">Started GeneratorControllerTest in 4.941 seconds (JVM running for 6.703)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:11,087</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@302f7971: startup date [Mon Aug 13 16:12:06 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:12:11,094</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 16:33:46 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:46,198</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 15916 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:46,200</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:46,232</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 16:33:46 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:47,536</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:47,718</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,387</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,548</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 16:33:46 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,622</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,623</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,623</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,624</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,624</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,625</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,628</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,628</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,629</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,630</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,631</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,632</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,632</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,633</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,633</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,640</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,641</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,676</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,676</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:48,817</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:49,406</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5edc70ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@77c233af, org.springframework.security.web.header.HeaderWriterFilter@10db6131, org.springframework.security.web.csrf.CsrfFilter@404db674, org.springframework.security.web.authentication.logout.LogoutFilter@3f183caa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e72a6cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37c41ec0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f1868c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4317850d, org.springframework.security.web.session.SessionManagementFilter@4730e0f0, org.springframework.security.web.access.ExceptionTranslationFilter@95eb320, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f2de715]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:49,532</td>
+<td class="Message">Started GeneratorControllerTest in 3.77 seconds (JVM running for 4.789)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:50,038</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 16:33:46 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:33:50,046</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 16:55:16 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:16,546</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 17348 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:16,548</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:16,581</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 16:55:16 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:17,819</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:17,990</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,555</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,713</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 16:55:16 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,793</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,794</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,795</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,795</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,796</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,796</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,798</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,798</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,799</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,801</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,802</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,802</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,803</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,803</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,803</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,808</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,809</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,838</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,838</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:18,972</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:19,573</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6015a4a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4afbb6c2, org.springframework.security.web.header.HeaderWriterFilter@553bc36c, org.springframework.security.web.csrf.CsrfFilter@5cc9d3d0, org.springframework.security.web.authentication.logout.LogoutFilter@48f4713c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1cdc1bbc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c6017b9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fe64d23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d0b0da6, org.springframework.security.web.session.SessionManagementFilter@2d5ef498, org.springframework.security.web.access.ExceptionTranslationFilter@1f1e58ca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2538bc06]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:19,709</td>
+<td class="Message">Started GeneratorControllerTest in 3.689 seconds (JVM running for 4.76)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:20,181</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 16:55:16 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 16:55:20,188</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 17:07:00 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:01,042</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 13168 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:01,044</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:01,075</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:07:01 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:02,475</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:02,646</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,246</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,433</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:07:01 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,521</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,522</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,523</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,523</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,524</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,525</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,526</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,527</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,528</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,530</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,531</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,531</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,532</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,532</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,533</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,538</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,540</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,568</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,569</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:03,710</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:04,305</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14f40030, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ba6ec50, org.springframework.security.web.header.HeaderWriterFilter@6af5bbd0, org.springframework.security.web.csrf.CsrfFilter@24d61e4, org.springframework.security.web.authentication.logout.LogoutFilter@3a894088, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ef0dd86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fb2e3fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5114b7c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c447c09, org.springframework.security.web.session.SessionManagementFilter@b34832b, org.springframework.security.web.access.ExceptionTranslationFilter@5399f6c5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6015a4a5]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:04,450</td>
+<td class="Message">Started GeneratorControllerTest in 4.086 seconds (JVM running for 5.049)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:04,923</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:07:01 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:07:04,928</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 17:32:12 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:12,719</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 1536 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:12,721</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:12,758</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:32:12 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:14,151</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:14,310</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:14,868</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:14,998</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:32:12 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,078</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,079</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,080</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,081</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,082</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,083</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,085</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,086</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,086</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,088</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,089</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,089</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,090</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,090</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,091</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,095</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,096</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,121</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,121</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,257</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:15,848</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5edc70ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@77c233af, org.springframework.security.web.header.HeaderWriterFilter@10db6131, org.springframework.security.web.csrf.CsrfFilter@404db674, org.springframework.security.web.authentication.logout.LogoutFilter@3f183caa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e72a6cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37c41ec0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f1868c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4317850d, org.springframework.security.web.session.SessionManagementFilter@4730e0f0, org.springframework.security.web.access.ExceptionTranslationFilter@95eb320, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f2de715]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:16,022</td>
+<td class="Message">Started GeneratorControllerTest in 3.861 seconds (JVM running for 4.886)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:16,542</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:32:12 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:32:16,547</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 17:33:49 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:49,354</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 19404 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:49,356</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:49,389</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6979efad: startup date [Mon Aug 13 17:33:49 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:50,787</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:50,960</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,616</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,788</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6979efad: startup date [Mon Aug 13 17:33:49 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,886</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,888</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,888</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,889</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,889</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,890</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,891</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,891</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,892</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,893</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,895</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,895</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,896</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,896</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,897</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,905</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,906</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,941</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:51,942</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:52,119</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:52,908</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@120df990, org.springframework.security.web.context.SecurityContextPersistenceFilter@23ee2ccf, org.springframework.security.web.header.HeaderWriterFilter@359ceb13, org.springframework.security.web.csrf.CsrfFilter@65593327, org.springframework.security.web.authentication.logout.LogoutFilter@5d14e99e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2baac4a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e685e6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c1b89ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b506ed0, org.springframework.security.web.session.SessionManagementFilter@5bf4764d, org.springframework.security.web.access.ExceptionTranslationFilter@4dd2ef54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26fadd98]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:33:53,092</td>
+<td class="Message">Started GeneratorControllerTest in 4.26 seconds (JVM running for 6.153)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:35:08,107</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@6979efad: startup date [Mon Aug 13 17:33:49 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:35:08,114</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 17:37:52 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:52,870</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 18796 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:52,872</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:52,903</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:37:52 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:54,266</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:54,423</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,029</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,198</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:37:52 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,282</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,283</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,284</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,285</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,286</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,286</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,288</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,289</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,289</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,291</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,291</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,291</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,292</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,292</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,293</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,298</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,299</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,334</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,335</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:55,493</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:56,109</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5922d3e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@303f1234, org.springframework.security.web.header.HeaderWriterFilter@597f0937, org.springframework.security.web.csrf.CsrfFilter@7ee8130e, org.springframework.security.web.authentication.logout.LogoutFilter@1b7332a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2538bc06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2149594a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4afbb6c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d57dbb5, org.springframework.security.web.session.SessionManagementFilter@6b6b3572, org.springframework.security.web.access.ExceptionTranslationFilter@3662bdff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@433c6abb]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:56,253</td>
+<td class="Message">Started GeneratorControllerTest in 3.916 seconds (JVM running for 4.947)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:56,734</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:37:52 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:37:56,740</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 17:39:29 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:30,017</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 16876 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:30,019</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:30,052</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@302f7971: startup date [Mon Aug 13 17:39:30 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:31,357</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:31,523</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,157</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,317</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@302f7971: startup date [Mon Aug 13 17:39:30 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,395</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,396</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,397</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,397</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,398</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,398</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,400</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,400</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,401</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,403</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,403</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,404</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,404</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,405</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,405</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,410</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,411</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,439</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,440</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:32,582</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:33,234</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6de6faa6, org.springframework.security.web.context.SecurityContextPersistenceFilter@6af5bbd0, org.springframework.security.web.header.HeaderWriterFilter@37c41ec0, org.springframework.security.web.csrf.CsrfFilter@7ad1caa2, org.springframework.security.web.authentication.logout.LogoutFilter@5114b7c7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5edc70ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b34832b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63538bb4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cad68df, org.springframework.security.web.session.SessionManagementFilter@5399f6c5, org.springframework.security.web.access.ExceptionTranslationFilter@1b7332a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@672a1c62]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:33,377</td>
+<td class="Message">Started GeneratorControllerTest in 3.941 seconds (JVM running for 4.93)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:33,868</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@302f7971: startup date [Mon Aug 13 17:39:30 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:39:33,874</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Aug 13 17:44:29 CST 2018</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:29,790</td>
+<td class="Message">Starting GeneratorControllerTest on LPW-COMPUTER with PID 26832 (started by ASUS in D:\IDEA\DreamWorkSpace\mydream)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:29,793</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">659</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:29,829</td>
+<td class="Message">Refreshing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:44:29 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">prepareRefresh</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">590</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:31,113</td>
+<td class="Message">Init DruidDataSource</td>
+<td class="MethodOfCaller">dataSource</td>
+<td class="FileOfCaller">DruidDataSourceAutoConfigure.java</td>
+<td class="LineOfCaller">56</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:31,286</td>
+<td class="Message">{dataSource-1} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">928</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:31,870</td>
+<td class="Message">Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,048</td>
+<td class="Message">Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:44:29 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">initControllerAdviceCache</td>
+<td class="FileOfCaller">RequestMappingHandlerAdapter.java</td>
+<td class="LineOfCaller">574</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,124</td>
+<td class="Message">Mapped &quot;{[/connection/delConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.delConnection(java.lang.Integer,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,126</td>
+<td class="Message">Mapped &quot;{[/connection/isConName]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConName(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,127</td>
+<td class="Message">Mapped &quot;{[/connection/insertConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.insertConnection(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,127</td>
+<td class="Message">Mapped &quot;{[/connection/toConnectionForm]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnectionForm()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,128</td>
+<td class="Message">Mapped &quot;{[/connection/isConnect]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.isConnect(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,129</td>
+<td class="Message">Mapped &quot;{[/connection/toConnection]}&quot; onto public java.lang.String com.mydream.backstate.connection.controller.ConnectionController.toConnection(org.springframework.ui.Model,com.mydream.backstate.connection.entity.Connection,java.lang.Integer)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,131</td>
+<td class="Message">Mapped &quot;{[/generator/showAllTable]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.showAllTable(java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,132</td>
+<td class="Message">Mapped &quot;{[/generator/genneratorCode]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.genneratorCode(java.lang.String,java.lang.String,org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,132</td>
+<td class="Message">Mapped &quot;{[/generator/toGenerator]}&quot; onto public java.lang.String com.mydream.backstate.generator.controller.GeneratorController.toGenerator(org.springframework.ui.Model)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,133</td>
+<td class="Message">Mapped &quot;{[/toIndex]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.index()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,134</td>
+<td class="Message">Mapped &quot;{[/logout]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.logout(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,134</td>
+<td class="Message">Mapped &quot;{[/checkUsername]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chechUsername(java.lang.String)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,134</td>
+<td class="Message">Mapped &quot;{[/tocharts]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.chart()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,135</td>
+<td class="Message">Mapped &quot;{[/loadToMain]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadToMain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,135</td>
+<td class="Message">Mapped &quot;{[/login]}&quot; onto public java.lang.String com.mydream.backstate.sysuser.controller.SysUserController.loadLogin()</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,139</td>
+<td class="Message">Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,140</td>
+<td class="Message">Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)</td>
+<td class="MethodOfCaller">register</td>
+<td class="FileOfCaller">AbstractHandlerMethodMapping.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,167</td>
+<td class="Message">Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,168</td>
+<td class="Message">Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]</td>
+<td class="MethodOfCaller">registerHandler</td>
+<td class="FileOfCaller">AbstractUrlHandlerMapping.java</td>
+<td class="LineOfCaller">373</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,321</td>
+<td class="Message">Adding welcome page template: index</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">WelcomePageHandlerMapping.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:32,908</td>
+<td class="Message">Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cd62003, org.springframework.security.web.context.SecurityContextPersistenceFilter@4730e0f0, org.springframework.security.web.header.HeaderWriterFilter@95eb320, org.springframework.security.web.csrf.CsrfFilter@4b0b64cc, org.springframework.security.web.authentication.logout.LogoutFilter@642413d4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@459b6c53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b7332a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76464795, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61ab89b0, org.springframework.security.web.session.SessionManagementFilter@4afbb6c2, org.springframework.security.web.access.ExceptionTranslationFilter@553bc36c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44784e2f]</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DefaultSecurityFilterChain.java</td>
+<td class="LineOfCaller">43</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:33,057</td>
+<td class="Message">Started GeneratorControllerTest in 3.737 seconds (JVM running for 4.778)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">59</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:33,589</td>
+<td class="Message">Closing org.springframework.web.context.support.GenericWebApplicationContext@13d4992d: startup date [Mon Aug 13 17:44:29 CST 2018]; root of context hierarchy</td>
+<td class="MethodOfCaller">doClose</td>
+<td class="FileOfCaller">AbstractApplicationContext.java</td>
+<td class="LineOfCaller">993</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2018-08-13 17:44:33,597</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1823</td>
+</tr>
